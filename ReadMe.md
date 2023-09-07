@@ -6,6 +6,8 @@ using non-native or command line applications.  The launcher will appear in the 
 `FileTypes` application allowing you to set it as the default handler when opening these types of files from `Tracker`
 and other applications.
 
+***Basic instructions are below but the [wiki](../../wiki) contains more details***
+
 
 ### Creating Launchers
 
@@ -20,8 +22,6 @@ To create a new launcher:
 
 _You may need to run the launcher once(and possibly reboot) for it to show up in the Haiku `Open with...` menu or
 `FileTypes` application_
-
-_See the [wiki](/Haiku/NowOpen/wiki) for more detailed instructions_
 
 
 ### Build Instructions
