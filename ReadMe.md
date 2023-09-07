@@ -8,6 +8,7 @@ and other applications.
 
 ***Instructions for building and creating launchers can be found in the [wiki](../../wiki)***
 
+![Screenshot](screenshot.png)
 
 ### Build Instructions
 
