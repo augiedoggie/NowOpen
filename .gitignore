@@ -1,0 +1,5 @@
+obj.*
+compile_commands.json
+.dir-locals.el
+.ccls-cache
+NowOpen-*.zip

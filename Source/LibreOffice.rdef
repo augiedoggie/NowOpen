@@ -1,0 +1,60 @@
+// SPDX-License-Identifier: MIT
+// SPDX-FileCopyrightText: 2023 Chris Roberts
+
+resource app_signature "application/x-vnd.cpr.LibreOfficeLauncher";
+
+resource file_types message {
+	"types" = "application/vnd.oasis.opendocument.base",
+	"types" = "application/vnd.oasis.opendocument.chart",
+	"types" = "application/vnd.oasis.opendocument.chart-template",
+	"types" = "application/vnd.oasis.opendocument.database",
+	"types" = "application/vnd.oasis.opendocument.formula",
+	"types" = "application/vnd.oasis.opendocument.formula-template",
+	"types" = "application/vnd.oasis.opendocument.graphics",
+	"types" = "application/vnd.oasis.opendocument.graphics-template",
+	"types" = "application/vnd.oasis.opendocument.image",
+	"types" = "application/vnd.oasis.opendocument.image-template",
+	"types" = "application/vnd.oasis.opendocument.presentation",
+	"types" = "application/vnd.oasis.opendocument.presentation-template",
+	"types" = "application/vnd.oasis.opendocument.spreadsheet",
+	"types" = "application/vnd.oasis.opendocument.spreadsheet-template",
+	"types" = "application/vnd.oasis.opendocument.text",
+	"types" = "application/vnd.oasis.opendocument.text-master",
+	"types" = "application/vnd.oasis.opendocument.text-template",
+	"types" = "application/vnd.oasis.opendocument.text-web"
+};
+
+resource("LaunchCommand") "/boot/system/apps/LibreOffice/program/LibreOffice";
+
+resource vector_icon {
+	$"6E6369660805FF05BA030100000101000079058805D6020016023C6EE73AEC02"
+	$"BC12033D72BD49DD57C47C4A4DFFFF9E05BB080A04222D2254365E36360A0E22"
+	$"2D2254365E365A3C5C425A425E5653562D502F50283C222828282F0A0B365F41"
+	$"5D415F4D5D5F515C4F5E4D5A4B6046503D33590A063C5C3C3050285030423642"
+	$"590A0428293C2250293C3108022638323E0802474347530A03363636432E3316"
+	$"0A030102000A040103000A05010302C000000000000000004000004B80004000"
+	$"000A060104000A000100000A070107000A0201001001178100040A01010002C0"
+	$"00000000000000004000004B80000000000A07010702C0000000000000000040"
+	$"00004B80000000000A02010012C000000000000000004000004B800000000001"
+	$"178100040A0201011001178200040A02010530202601178100040A02010512BF"
+	$"B66B0000000000004000004B723444800001178100040A02010512BFB66B0000"
+	$"000000004000004B723446C00001178100040A02010512BFB66B000000000000"
+	$"4000004B723448000001178100040A02010512BFB66B0000000000004000004B"
+	$"723448A00001178100040A02010530202B01178100040A020105302030011781"
+	$"00040A02010530203501178100040A020106301F2001178100040A020106302B"
+	$"1A01178100040A02010630251D0117810004"
+};
+
+resource app_flags B_SINGLE_LAUNCH | B_BACKGROUND_APP;
+
+resource app_version {
+	major  = 1,
+	middle = 0,
+	minor  = 0,
+
+	variety = B_APPV_FINAL,
+	internal = 0,
+
+	short_info = "LibreOffice Launcher",
+	long_info = "LibreOffice Launcher"
+};

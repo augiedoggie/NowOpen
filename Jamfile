@@ -1,0 +1,16 @@
+
+include Jamrules ;
+
+BuildLauncher NowOpen : Now\ Open ;
+
+BuildLauncher Audacious : Audacious\ Launcher ;
+# BuildLauncher Gimp ;
+BuildLauncher Jar : Jar\ Launcher ;
+BuildLauncher Jed ;
+#BuildLauncher LibreOffice ;
+BuildLauncher MidnightCommander : Midnight\ Commander ;
+BuildLauncher MPV ;
+BuildLauncher Nano ;
+BuildLauncher NNN ;
+
+BuildDistribution dist ;
