@@ -6,7 +6,7 @@ using non-native or command line applications.  The launcher will appear in the 
 `FileTypes` application allowing you to set it as the default handler when opening these types of files from `Tracker`
 and other applications.
 
-Instructions for building and creating launchers can be found in the [wiki](../../wiki)***
+***Instructions for building and creating launchers can be found in the [wiki](../../wiki)***
 
 
 ### Build Instructions
