@@ -17,8 +17,7 @@ and other applications.
 ~/NowOpen> jam
 ```
 
-Use `jam predefined` to build several predefined launchers.
-The built launchers will be available in the `obj.X86` directory.
+This will build the template `Now Open` launcher as well as several predefined launchers.  The built launchers will be available in the `obj.X86` directory.
 
 *After the build finishes you may need to run the launcher once(and possibly reboot) for it to show up in the Haiku
 `Open with...` menu or `FileTypes` application*
