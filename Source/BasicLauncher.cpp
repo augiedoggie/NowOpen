@@ -3,7 +3,6 @@
 
 #include "SettingsWindow.h"
 
-
 #include <Alert.h>
 #include <AppFileInfo.h>
 #include <Application.h>
@@ -25,7 +24,8 @@ public:
 	{}
 
 	virtual void
-	RefsReceived(BMessage* message) {
+	RefsReceived(BMessage* message)
+	{
 		entry_ref ref;
 
 		fRefsHandled = true;
@@ -88,16 +88,16 @@ public:
 
 		if (commandString.FindFirst("%files%") >= 0)
 			commandString.ReplaceAll("%files%", quotedFiles);
-		else {
+		else
 			commandString << " " << quotedFiles << " &";
-		}
 
 		if (system(commandString.String()) != 0)
 			(new BAlert("ERROR", "Error executing command!", "Ok", NULL, NULL, B_WIDTH_AS_USUAL, B_STOP_ALERT))->Go();
 	}
 
 	virtual void
-	ReadyToRun() {
+	ReadyToRun()
+	{
 		// if we were called via 'Open with...' or double clicking a file then we're finished
 		if (fRefsHandled) {
 			be_app->PostMessage(B_QUIT_REQUESTED);

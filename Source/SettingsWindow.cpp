@@ -111,7 +111,7 @@ SettingsWindow::SettingsWindow(BRect frame)
 
 
 void
-SettingsWindow::MessageReceived(BMessage *message)
+SettingsWindow::MessageReceived(BMessage* message)
 {
 	switch(message->what) {
 		case kFileTypesMessage:
@@ -120,20 +120,20 @@ SettingsWindow::MessageReceived(BMessage *message)
 			break;
 		case kHelpMessage:
 		{
-			const char* args[] = { kHelpUrl, NULL };
+			const char* args[] = {kHelpUrl, NULL};
 			status_t rc = be_roster->Launch("application/x-vnd.Be.URL.https", 1, args);
 			if (rc != B_OK && rc != B_ALREADY_RUNNING)
 				(new BAlert("Error", "Failed to launch URL", "Ok", NULL, NULL, B_WIDTH_AS_USUAL, B_STOP_ALERT))->Go();
-		}
 			break;
+		}
 		case kProjectMessage:
 		{
-			const char* args[] = { kProjectUrl, NULL };
+			const char* args[] = {kProjectUrl, NULL};
 			status_t rc = be_roster->Launch("application/x-vnd.Be.URL.https", 1, args);
 			if (rc != B_OK && rc != B_ALREADY_RUNNING)
 				(new BAlert("Error", "Failed to launch URL", "Ok", NULL, NULL, B_WIDTH_AS_USUAL, B_STOP_ALERT))->Go();
-		}
 			break;
+		}
 		default:
 			BWindow::MessageReceived(message);
 	}
@@ -141,7 +141,8 @@ SettingsWindow::MessageReceived(BMessage *message)
 
 
 bool
-SettingsWindow::QuitRequested() {
+SettingsWindow::QuitRequested()
+{
 	_SaveSettings();
 	return BWindow::QuitRequested();
 }
